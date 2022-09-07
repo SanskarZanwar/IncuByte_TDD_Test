@@ -5,7 +5,6 @@ import static org.testng.Assert.assertEquals;
 
 
 public class StringCalculatorTest {
-
     @Test
     public void testAdd() {
         StringCalculator simpleCalculator = new StringCalculator();
@@ -14,5 +13,10 @@ public class StringCalculatorTest {
         assertEquals(2, simpleCalculator.add("2"));
     }
 
-}
+    @Test
+    public void testAddMultipleNumbers() {
+        StringCalculator simpleCalculator = new StringCalculator();
+        assertEquals(3, simpleCalculator.add("1,2"));
+    }
 
+}
