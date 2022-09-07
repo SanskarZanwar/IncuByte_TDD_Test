@@ -5,6 +5,7 @@
     <classes>
       <class name="testing.StringCalculatorTest">
         <methods>
+          <include name="testAdd"/>
           <include name="testAddMultipleNumbers"/>
         </methods>
       </class> <!-- testing.StringCalculatorTest -->
