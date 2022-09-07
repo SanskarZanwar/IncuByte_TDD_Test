@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sansk\AppData\Local\Temp\testng-eclipse-813788399\testng-customsuite.xml</span>
+                    <span>C:\Users\Sansk\AppData\Local\Temp\testng-eclipse--670668091\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,6 +110,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testing.StringCalculatorTest" class="method navigator-link" hash-for-method="testAddOneNumber">testAddOneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testing.StringCalculatorTest" class="method navigator-link" hash-for-method="testAddStringNumbers">testAddStringNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testing.StringCalculatorTest" class="method navigator-link" hash-for-method="testAddStrings">testAddStrings</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -171,6 +181,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testAddStringNumbers">
+                  </a> <!-- testAddStringNumbers -->
+                  <span class="method-name">testAddStringNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddStrings">
+                  </a> <!-- testAddStrings -->
+                  <span class="method-name">testAddStrings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testEmptyString">
                   </a> <!-- testEmptyString -->
                   <span class="method-name">testEmptyString</span>
@@ -209,7 +233,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sansk\AppData\Local\Temp\testng-eclipse-813788399\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sansk\AppData\Local\Temp\testng-eclipse--670668091\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,21 +282,21 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testAddMultipleNumbers')
 data.setCell(0, 2, 'testing.StringCalculatorTest')
-data.setCell(0, 3, 6);
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testNewLine')
+data.setCell(1, 1, 'testEmptyString')
 data.setCell(1, 2, 'testing.StringCalculatorTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testOverThousand')
+data.setCell(2, 1, 'testAddStringNumbers')
 data.setCell(2, 2, 'testing.StringCalculatorTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testEmptyString')
+data.setCell(3, 1, 'testAddOneNumber')
 data.setCell(3, 2, 'testing.StringCalculatorTest')
 data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
@@ -280,18 +304,26 @@ data.setCell(4, 1, 'testNegativeNumber')
 data.setCell(4, 2, 'testing.StringCalculatorTest')
 data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testAddOneNumber')
+data.setCell(5, 1, 'testNewLine')
 data.setCell(5, 2, 'testing.StringCalculatorTest')
 data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testOtherDelimiter')
 data.setCell(6, 2, 'testing.StringCalculatorTest')
 data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testOverThousand')
+data.setCell(7, 2, 'testing.StringCalculatorTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testAddStrings')
+data.setCell(8, 2, 'testing.StringCalculatorTest')
+data.setCell(8, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 18 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -324,35 +356,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testAddMultipleNumbers</span>
-                <span class="method-start">21 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testAddOneNumber</span>
                 <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">testAddOneNumber</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddStringNumbers</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddStrings</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">testEmptyString</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNegativeNumber</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNewLine</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testOtherDelimiter</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">55 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testOverThousand</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">destroy</span>
-                <span class="method-start">43 ms</span>
+                <span class="method-start">60 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
